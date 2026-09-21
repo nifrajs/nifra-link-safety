@@ -60,7 +60,11 @@ import { createTypeSafeLinkClassifier } from "@nifrajs/link-safety-typesafe";
 
 const scanner = createLinkSafetyScanner({
   classifier: createTypeSafeLinkClassifier({
-    apiKey: process.env.TYPESAFE_API_KEY!,
+    apiKey: (() => {
+      const apiKey = process.env.TYPESAFE_API_KEY;
+      if (!apiKey) throw new Error("TYPESAFE_API_KEY is required");
+      return apiKey;
+    })(),
     model: "jev-1.13.0",
   }),
 });

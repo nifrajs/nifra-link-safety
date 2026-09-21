@@ -1,7 +1,13 @@
 # Security policy
 
-Please report suspected vulnerabilities privately to the maintainers with a minimal
-reproduction, affected version, impact, and safe contact path. Do not include real
+Please report suspected vulnerabilities privately through the repository's GitHub
+Security Advisory form:
+
+https://github.com/nifrajs/nifra-link-safety/security/advisories/new
+
+Include a minimal reproduction, affected package and version, and impact. If the
+advisory form is unavailable, contact the maintainers through a private channel
+rather than sharing sensitive details in a public issue. Do not include real
 customer URLs, credentials, tokens, or personal data.
 
 Nifra Link Safety is intentionally a non-fetching classifier. It treats corpus entries,

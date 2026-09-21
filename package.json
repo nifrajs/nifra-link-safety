@@ -18,7 +18,8 @@
     "test": "bun test",
     "test:coverage": "bun test --coverage",
     "pack:check": "bun run scripts/pack-check.ts",
-    "evaluate": "bun run packages/link-safety-cli/src/index.ts evaluate"
+    "evaluate": "bun run packages/link-safety-cli/src/index.ts evaluate",
+    "release:check": "bun run check && bun run build && bun run pack:check && bun run evaluate && bun audit"
   },
   "overrides": {
     "@nifrajs/decision": "link:@nifrajs/decision",

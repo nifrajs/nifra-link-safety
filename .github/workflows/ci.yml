@@ -20,3 +20,5 @@ jobs:
       - run: bun run check
       - run: bun run build
       - run: bun run pack:check
+      - run: bun run evaluate
+      - run: bun audit
