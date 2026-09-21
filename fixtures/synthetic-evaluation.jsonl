@@ -1,0 +1,4 @@
+{"id":"case-benign","url":"https://docs.example.test/guide","expected":"benign"}
+{"id":"case-malicious","url":"https://login.example.invalid/account","expected":"malicious"}
+{"id":"case-suspicious","url":"https://redirect.example.invalid/claim/prize","expected":"suspicious"}
+{"id":"case-unknown","url":"https://unknown.example.test/welcome","expected":"unknown"}

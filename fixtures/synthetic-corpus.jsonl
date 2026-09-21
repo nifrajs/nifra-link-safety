@@ -1,0 +1,3 @@
+{"id":"benign-docs","indicatorType":"hostname","indicator":"docs.example.test","label":"benign","category":"documentation","source":"synthetic"}
+{"id":"known-phish","indicatorType":"hostname","indicator":"login.example.invalid","label":"malicious","category":"credential_phishing","source":"synthetic"}
+{"id":"review-redirect","indicatorType":"hostname_path_prefix","indicator":"redirect.example.invalid/claim","label":"suspicious","category":"redirect_abuse","source":"synthetic"}

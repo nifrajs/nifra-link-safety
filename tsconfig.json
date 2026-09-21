@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/link-safety/tsconfig.build.json" },
+    { "path": "./packages/link-safety-typesafe/tsconfig.build.json" },
+    { "path": "./packages/link-safety-cli/tsconfig.build.json" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "nifra-link-safety-monorepo",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "bun": ">=1.4.0",
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "check": "bun run lint && bun run typecheck && bun test",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc -b",
+    "test": "bun test",
+    "test:coverage": "bun test --coverage",
+    "pack:check": "bun run scripts/pack-check.ts",
+    "evaluate": "bun run packages/link-safety-cli/src/index.ts evaluate"
+  },
+  "overrides": {
+    "@nifrajs/decision": "link:@nifrajs/decision",
+    "@nifrajs/decision-typesafe": "link:@nifrajs/decision-typesafe"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "@types/bun": "1.4.2",
+    "typescript": "6.0.3"
+  }
+}

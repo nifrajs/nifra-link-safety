@@ -1,0 +1,41 @@
+{
+  "name": "@nifrajs/link-safety",
+  "version": "0.1.0",
+  "description": "Local-first, fail-closed URL risk classification for TypeScript applications.",
+  "keywords": [
+    "nifra",
+    "url",
+    "security",
+    "phishing",
+    "abuse-detection",
+    "classification"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nifrajs/nifra-link-safety.git",
+    "directory": "packages/link-safety"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test"
+  }
+}

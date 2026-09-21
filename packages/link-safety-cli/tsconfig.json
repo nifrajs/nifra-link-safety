@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "types": ["bun"]
+  },
+  "references": [
+    { "path": "../link-safety/tsconfig.build.json" },
+    { "path": "../link-safety-typesafe/tsconfig.build.json" }
+  ],
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

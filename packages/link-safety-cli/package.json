@@ -1,0 +1,47 @@
+{
+  "name": "@nifrajs/link-safety-cli",
+  "version": "0.1.0",
+  "description": "CLI for Nifra Link Safety scans and evaluations.",
+  "keywords": [
+    "nifra",
+    "url",
+    "security",
+    "cli",
+    "evaluation"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "nifra-link-safety": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nifrajs/nifra-link-safety.git",
+    "directory": "packages/link-safety-cli"
+  },
+  "dependencies": {
+    "@nifrajs/link-safety": "workspace:*",
+    "@nifrajs/link-safety-typesafe": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test"
+  }
+}
