@@ -21,8 +21,8 @@
         "nifra-link-safety": "./dist/index.js",
       },
       "dependencies": {
-        "@nifrajs/link-safety": "workspace:*",
-        "@nifrajs/link-safety-typesafe": "workspace:*",
+        "@nifrajs/link-safety": "^0.1.0",
+        "@nifrajs/link-safety-typesafe": "^0.1.0",
       },
     },
     "packages/link-safety-typesafe": {
@@ -36,10 +36,6 @@
         "@nifrajs/schema": "^3.3.0",
       },
     },
-  },
-  "overrides": {
-    "@nifrajs/decision": "link:@nifrajs/decision",
-    "@nifrajs/decision-typesafe": "link:@nifrajs/decision-typesafe",
   },
   "packages": {
     "@biomejs/biome": ["@biomejs/biome@2.5.14", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.5.14", "@biomejs/cli-darwin-x64": "2.5.14", "@biomejs/cli-linux-arm64": "2.5.14", "@biomejs/cli-linux-arm64-musl": "2.5.14", "@biomejs/cli-linux-x64": "2.5.14", "@biomejs/cli-linux-x64-musl": "2.5.14", "@biomejs/cli-win32-arm64": "2.5.14", "@biomejs/cli-win32-x64": "2.5.14" }, "bin": { "biome": "bin/biome" } }, "sha512-0FabLIjd4M/dm8VFI86RMaLLdgepzbdfiAL2R8cr7V81OYYrP1w7Z73KfAwPK5h9SrEBXTzNG2y+mBwPo9xRnw=="],
@@ -62,9 +58,9 @@
 
     "@nifrajs/core": ["@nifrajs/core@3.3.0", "", {}, "sha512-RJ85kWJYKM517oYgwtGQR3R5ZOADh361HIIUUjU3Ky163C8EAPf5LvC1h/KbCtPh7/bjrWTBR0IyCvz+vNz0Sg=="],
 
-    "@nifrajs/decision": ["@nifrajs/decision@link:@nifrajs/decision", {}],
+    "@nifrajs/decision": ["@nifrajs/decision@0.1.0", "", { "dependencies": { "@nifrajs/core": "^3.3.0" } }, "sha512-b5txVT8dSSSGhJ+Rcx1cCjLvnCaQ6Ej9CImaXc9bY6LorO90xh1qdLENmwwOacRJL4vUbdB877sO9kzeQASIeA=="],
 
-    "@nifrajs/decision-typesafe": ["@nifrajs/decision-typesafe@link:@nifrajs/decision-typesafe", {}],
+    "@nifrajs/decision-typesafe": ["@nifrajs/decision-typesafe@0.1.0", "", { "dependencies": { "@nifrajs/decision": "^0.1.0" } }, "sha512-Lhfj+ziJ3m4F67YK9Ww1n+t/0/QfkHRDxLCn0in/C6kuZZvg/xsA9y/RDkazmJoCEyLK0CPrK9RHyn70CXmRzA=="],
 
     "@nifrajs/link-safety": ["@nifrajs/link-safety@workspace:packages/link-safety"],
 
