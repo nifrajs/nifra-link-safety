@@ -29,9 +29,10 @@
       "name": "@nifrajs/link-safety-typesafe",
       "version": "0.1.0",
       "dependencies": {
+        "@nifrajs/core": "^3.3.0",
         "@nifrajs/decision": "^0.1.0",
         "@nifrajs/decision-typesafe": "^0.1.0",
-        "@nifrajs/link-safety": "workspace:*",
+        "@nifrajs/link-safety": "^0.1.0",
         "@nifrajs/schema": "^3.3.0",
       },
     },

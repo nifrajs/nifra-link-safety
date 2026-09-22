@@ -39,7 +39,7 @@
     "@nifrajs/decision": "^0.1.0",
     "@nifrajs/decision-typesafe": "^0.1.0",
     "@nifrajs/schema": "^3.3.0",
-    "@nifrajs/link-safety": "workspace:*"
+    "@nifrajs/link-safety": "^0.1.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",

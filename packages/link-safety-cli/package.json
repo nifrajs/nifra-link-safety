@@ -37,8 +37,8 @@
     "directory": "packages/link-safety-cli"
   },
   "dependencies": {
-    "@nifrajs/link-safety": "workspace:*",
-    "@nifrajs/link-safety-typesafe": "workspace:*"
+    "@nifrajs/link-safety": "^0.1.0",
+    "@nifrajs/link-safety-typesafe": "^0.1.0"
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
